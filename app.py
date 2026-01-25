@@ -68,9 +68,9 @@ if not os.path.exists(TOKENIZER_PATH):
     st.error("❌ Tokenizer file (tokenizer.pkl) not found")
     st.stop()
 
-model = load_model(MODEL_PATH)
+model = load_model(email_classifer.h5)
 
-with open(TOKENIZER_PATH, "rb") as f:
+with open(tokenizer.pkl, "rb") as f:
     tokenizer = pickle.load(f)
 
 # ------------------ INPUT ------------------
@@ -120,4 +120,5 @@ if st.button("🔍 Predict"):
                 f"📌 Spam Probability: **{spam_percent:.2f}%**\n"
                 f"📌 Not Spam Probability: **{not_spam_percent:.2f}%**"
             )
+
 
