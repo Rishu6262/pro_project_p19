@@ -45,10 +45,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # ------------------ CONFIG ------------------
-MODEL_PATH = "email_classifier.h5"
+MODEL_PATH = "email_classifer.h5"   # ✅ SAME AS YOUR FILE
 TOKENIZER_PATH = "tokenizer.pkl"
-MAX_LEN = 50          # same as training
-SPAM_THRESHOLD = 0.65 # improved threshold
+MAX_LEN = 50
+SPAM_THRESHOLD = 0.65
 # --------------------------------------------
 
 st.set_page_config(
@@ -61,16 +61,17 @@ st.write("Check whether an email is **Spam** or **Not Spam**")
 
 # ------------------ LOAD FILES SAFELY ------------------
 if not os.path.exists(MODEL_PATH):
-    st.error("❌ Model file (email_classifier.h5) not found")
+    st.error("❌ Model file (email_classifer.h5) not found")
     st.stop()
 
 if not os.path.exists(TOKENIZER_PATH):
     st.error("❌ Tokenizer file (tokenizer.pkl) not found")
     st.stop()
 
-model = load_model(email_classifer.h5)
+# ✅ CORRECT LOADING
+model = load_model(MODEL_PATH)
 
-with open(tokenizer.pkl, "rb") as f:
+with open(TOKENIZER_PATH, "rb") as f:
     tokenizer = pickle.load(f)
 
 # ------------------ INPUT ------------------
@@ -84,11 +85,9 @@ if st.button("🔍 Predict"):
     if email_text.strip() == "":
         st.warning("⚠️ Please enter email text")
     else:
-        # Preprocess
         seq = tokenizer.texts_to_sequences([email_text])
         padded = pad_sequences(seq, maxlen=MAX_LEN)
 
-        # Prediction
         pred = model.predict(padded, verbose=0)[0][0]
 
         spam_prob = float(pred)
@@ -99,7 +98,6 @@ if st.button("🔍 Predict"):
 
         st.subheader("📊 Prediction Result")
 
-        # ------------------ DECISION LOGIC ------------------
         if spam_prob >= SPAM_THRESHOLD:
             st.error(
                 f"🚨 **Spam Email**\n\n"
@@ -120,6 +118,3 @@ if st.button("🔍 Predict"):
                 f"📌 Spam Probability: **{spam_percent:.2f}%**\n"
                 f"📌 Not Spam Probability: **{not_spam_percent:.2f}%**"
             )
-
-
-
