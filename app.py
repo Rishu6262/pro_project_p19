@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load model
-model = load_model("email_classifier.h5")
+model = load_model("email_classifer.h5")
 
 # Load tokenizer
 with open("tokenizer.pkl", "rb") as f:
@@ -36,3 +36,4 @@ if st.button("🔍 Predict"):
             st.error(f"🚨 Spam Email ({pred:.2f})")
         else:
             st.success(f"✅ Not Spam ({1-pred:.2f})")
+
