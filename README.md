@@ -1,47 +1,64 @@
-# 📧 Email Classification Using Deep Learning
+# 📧 Spam Email Classifier Using Deep Learning
 
 ## 📌 Project Overview
 
-This project is a Deep Learning-based Email Classification System that automatically categorizes emails into different classes using Natural Language Processing (NLP) and Recurrent Neural Networks (RNNs).
+The Spam Email Classifier is a Deep Learning and Natural Language Processing (NLP) project that automatically identifies whether an email is **Spam** or **Ham (Not Spam)**.
 
-The system processes raw email text, performs text cleaning and preprocessing, converts text into numerical sequences, and uses deep learning models to classify emails into predefined categories.
+The system analyzes email text, performs preprocessing and tokenization, and uses deep learning models to classify incoming emails with high accuracy.
 
-The project is built using TensorFlow/Keras and trained on the Enron Email Dataset.
+This project demonstrates the practical application of NLP and Deep Learning for automated email filtering.
+
+---
+
+# ❓ Why Use This Project?
+
+Email spam is one of the most common problems in digital communication. Manually filtering unwanted emails is time-consuming and inefficient. This project uses Deep Learning and Natural Language Processing (NLP) techniques to automatically classify emails as Spam or Ham (Not Spam).
+
+### Benefits of This Project
+
+* Automates email filtering process.
+* Reduces unwanted spam messages.
+* Improves email management efficiency.
+* Demonstrates real-world NLP applications.
+* Helps organizations and individuals detect suspicious emails.
+* Provides hands-on experience with Deep Learning models such as RNN, LSTM, and GRU.
+* Can be extended for enterprise-level email security systems.
+
+This project serves as a practical example of how Artificial Intelligence can be used to solve real-world communication and cybersecurity challenges.
 
 ---
 
 # 🚀 Objectives
 
-* Automate email classification using NLP.
-* Clean and preprocess unstructured email text.
-* Compare different deep learning architectures.
-* Evaluate model performance.
-* Identify the best-performing model.
+* Detect spam emails automatically.
+* Apply Natural Language Processing techniques.
+* Train Deep Learning models for text classification.
+* Compare model performance.
+* Build a reusable email filtering system.
 
 ---
 
 # 📊 Dataset Information
 
-### Dataset
+### Dataset Name
 
-Enron Email Dataset
+Spam Mail Classifier Dataset
 
-### Dataset Features
+### Total Records
 
-* Email Messages
-* Subject Lines
-* Sender Information
-* Receiver Information
-* Email Content
+* 1000 Emails
 
-### Categories
+### Features
 
-The emails are classified into:
+| Feature    | Description   |
+| ---------- | ------------- |
+| email_text | Email Content |
+| label      | Spam or Ham   |
 
-* General Emails
-* Promotional Emails
-* Spam Emails
-* Meeting Emails
+### Target Variable
+
+* Spam
+* Ham
 
 ---
 
@@ -52,26 +69,26 @@ The emails are classified into:
 * Pandas
 * TensorFlow
 * Keras
-* Matplotlib
-* Seaborn
-* Regular Expressions (Regex)
 * NLP
+* Streamlit
+* Pickle
 
 ---
 
 # 📂 Project Structure
 
 ```bash
-Email_Classification_Project/
+Spam_Email_Classifier/
 │
-├── pro_project.ipynb
+├── app.py
 ├── email_classifier.h5
 ├── tokenizer.pkl
+├── spam_mail_classifier.csv
 ├── requirements.txt
 ├── README.md
 │
-└── dataset/
-    └── Enron Email Dataset
+└── notebooks/
+    └── model_training.ipynb
 ```
 
 ---
@@ -80,39 +97,12 @@ Email_Classification_Project/
 
 The following preprocessing steps were applied:
 
-### Text Cleaning
-
-* Convert text to lowercase
-* Remove email headers
-* Remove special characters
-* Remove unnecessary text patterns
-
-### Label Generation
-
-Rule-based labeling was used to create categories:
-
-* Meeting
-* Promotion
-* Spam
-* General
-
-### Tokenization
-
-Text was converted into sequences using:
-
-```python
-Tokenizer()
-```
-
-### Padding
-
-Sequences were padded using:
-
-```python
-pad_sequences()
-```
-
-to maintain equal input length.
+* Lowercase Conversion
+* Text Cleaning
+* Removing Special Characters
+* Tokenization
+* Sequence Padding
+* Label Encoding
 
 ---
 
@@ -122,41 +112,40 @@ to maintain equal input length.
 
 Advantages:
 
-* Captures sequential patterns
+* Learns sequential text patterns
 * Fast training
-* Suitable for basic sequence learning
 
 ---
 
-## 2. LSTM (Long Short-Term Memory)
+## 2. LSTM
 
 Advantages:
 
 * Handles long-term dependencies
-* Reduces vanishing gradient issues
-* Better context understanding
+* Better text understanding
 
 ---
 
-## 3. GRU (Gated Recurrent Unit)
+## 3. GRU
 
 Advantages:
 
 * Faster than LSTM
-* Fewer parameters
-* Efficient sequence modeling
+* Efficient memory usage
 
 ---
 
-# ⚙️ Model Architecture
+# ⚙️ Model Workflow
 
-The models use:
-
-* Embedding Layer
-* RNN / LSTM / GRU Layer
-* Dropout Layer
-* Dense Output Layer
-* Softmax Activation
+1. Load Dataset
+2. Clean Email Text
+3. Tokenize Text
+4. Convert Text into Sequences
+5. Apply Padding
+6. Train Deep Learning Models
+7. Evaluate Performance
+8. Save Best Model
+9. Predict Spam/Ham Emails
 
 ---
 
@@ -165,9 +154,10 @@ The models use:
 Models were evaluated using:
 
 * Accuracy
+* Precision
+* Recall
+* F1 Score
 * Loss
-* Validation Accuracy
-* Validation Loss
 
 ---
 
@@ -175,39 +165,30 @@ Models were evaluated using:
 
 The following models were compared:
 
-* Simple RNN
+* RNN
 * LSTM
 * GRU
 
-The model with the highest test accuracy was selected as the final model and saved as:
-
-```bash
-email_classifier.h5
-```
+The model with the highest validation accuracy was selected and saved for deployment.
 
 ---
 
-# 💻 Model Workflow
+# 💻 Streamlit Application
 
-1. Load Email Dataset
-2. Clean Email Text
-3. Generate Labels
-4. Tokenize Text
-5. Pad Sequences
-6. Train Deep Learning Models
-7. Evaluate Performance
-8. Save Best Model
-9. Predict Email Category
+Users can:
+
+* Enter Email Text
+* Click Predict
+* Instantly Get Results
+
+Prediction Output:
+
+* Spam Email 🚫
+* Ham Email ✅
 
 ---
 
-# ▶️ Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/email-classification.git
-```
+# ▶️ Run Locally
 
 ### Install Dependencies
 
@@ -215,10 +196,10 @@ git clone https://github.com/yourusername/email-classification.git
 pip install -r requirements.txt
 ```
 
-### Run Notebook
+### Run Application
 
 ```bash
-jupyter notebook
+streamlit run app.py
 ```
 
 ---
@@ -238,27 +219,26 @@ pickle-mixin
 
 Through this project, I learned:
 
-* Natural Language Processing (NLP)
+* Natural Language Processing
 * Text Preprocessing
 * Tokenization
-* Sequence Modeling
 * Deep Learning
-* RNN Architecture
-* LSTM Networks
-* GRU Networks
-* Model Evaluation
-* TensorFlow & Keras
+* RNN
+* LSTM
+* GRU
+* TensorFlow
+* Model Deployment
+* Streamlit
 
 ---
 
 # 🔮 Future Improvements
 
-* Real Spam Detection
-* Transformer Models (BERT)
-* Email Priority Prediction
-* Sentiment Analysis
-* Multi-language Email Classification
+* BERT-based Spam Detection
+* Multi-language Support
 * Real-time Email Filtering
+* Gmail Integration
+* Advanced NLP Models
 
 ---
 
@@ -266,7 +246,13 @@ Through this project, I learned:
 
 This project is developed for educational and research purposes only.
 
-The email classifications generated by the model are predictions based on learned patterns from training data and may not always represent the true intent or category of an email.
+The predictions generated by the model are based on learned patterns from historical email data and may not always be 100% accurate. The system is intended to demonstrate the application of Deep Learning and NLP techniques in spam email detection.
+
+---
+
+# Conclusion
+
+This project demonstrates how Deep Learning and Natural Language Processing can be used to automatically classify emails as Spam or Ham. By leveraging models such as RNN, LSTM, and GRU, the system effectively learns patterns in email text and provides accurate predictions for email filtering applications.
 
 ---
 
@@ -275,14 +261,3 @@ The email classifications generated by the model are predictions based on learne
 **Rishu Gurjar**
 
 Aspiring Data Scientist | Machine Learning Enthusiast | Deep Learning Developer
-
-### Skills
-
-* Python
-* Machine Learning
-* Deep Learning
-* NLP
-* TensorFlow
-* Keras
-
-Connect with me on LinkedIn and GitHub to explore more AI and Data Science projects.
