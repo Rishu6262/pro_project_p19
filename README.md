@@ -28,6 +28,16 @@ This project serves as a practical example of how Artificial Intelligence can be
 
 ---
 
+❓ Why I Chose This Project?
+
+I chose this project because email spam detection is a real-world problem that affects individuals and organizations every day. Spam emails can waste time, reduce productivity, and sometimes contain malicious content such as phishing links and scams.
+
+This project provided an opportunity to apply Natural Language Processing (NLP) and Deep Learning techniques to solve a practical problem. It allowed me to work with text data, perform preprocessing and tokenization, and build advanced models such as RNN, LSTM, and GRU for email classification.
+
+Through this project, I gained hands-on experience in data preprocessing, deep learning model development, performance evaluation, and deployment. It also helped me strengthen my understanding of how Artificial Intelligence can be used to automate tasks and improve communication systems.
+
+---
+
 # 🚀 Objectives
 
 * Detect spam emails automatically.
