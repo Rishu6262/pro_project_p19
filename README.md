@@ -1,5 +1,31 @@
 # 📧 Spam Email Classifier Using Deep Learning
 
+---
+
+# 🚀 Live Demo
+
+Experience the **Spam Email Classifier Using Deep Learning** through the interactive Streamlit web application.
+
+🌐 **Live Application:**  
+🔗 https://proprojectp19-uxf8aemmhm6lph4tcntwrx.streamlit.app/
+
+The application allows users to enter email content and instantly predict whether the message is **Spam 🚫** or **Ham (Not Spam) ✅** using a trained **Deep Learning** model powered by **Natural Language Processing (NLP)**. Built with **Python**, **TensorFlow/Keras**, and **Streamlit**, it provides a fast, user-friendly interface for real-time email classification.
+
+---
+
+### ✨ Features
+
+- 📧 Real-Time Spam Email Detection
+- 🤖 Deep Learning-Based Text Classification
+- 🧠 Natural Language Processing (NLP)
+- ⚡ Instant Spam/Ham Prediction
+- 🌐 Interactive Streamlit Web Application
+- 📱 Accessible from Any Modern Web Browser
+
+> **Try the live application and explore how Deep Learning and NLP can intelligently classify emails with just a few clicks!**
+
+---
+
 ## 📌 Project Overview
 
 The **Spam Email Classifier Using Deep Learning** is an **End-to-End Deep Learning and Natural Language Processing (NLP)** project designed to automatically classify emails as **Spam** or **Ham (Not Spam)**. The system leverages advanced text processing techniques and deep learning models to analyze email content and accurately detect unwanted or malicious messages.
