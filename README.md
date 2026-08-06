@@ -110,7 +110,71 @@ Spam_Email_Classifier/
 │
 └── notebooks/
     └── model_training.ipynb
+
 ```
+
+# 🔄 Project Workflow
+
+### 📥 Step 1: Data Collection
+
+- Load the spam email dataset.
+- Understand dataset structure and labels.
+
+---
+
+### 🧹 Step 2: Data Preprocessing
+
+- Convert text to lowercase
+- Remove punctuation
+- Remove special characters
+- Tokenization
+- Padding sequences
+- Label Encoding
+
+---
+
+### 📊 Step 3: Exploratory Data Analysis (EDA)
+
+Analyze:
+
+- Spam vs Ham distribution
+- Word frequency
+- Message length
+- Common spam keywords
+
+---
+
+### 🧠 Step 4: Deep Learning Model Training
+
+Train multiple Deep Learning models:
+
+- Simple RNN
+- LSTM
+- GRU
+
+---
+
+### 📏 Step 5: Model Evaluation
+
+Evaluate using:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Loss
+
+---
+
+### 💾 Step 6: Model Saving
+
+Save the trained model and tokenizer using Pickle/Keras.
+
+---
+
+### 🌐 Step 7: Deployment
+
+Deploy the model using Streamlit for real-time spam prediction.
 
 ---
 
@@ -236,20 +300,22 @@ pickle-mixin
 
 ---
 
-# 🎯 Learning Outcomes
+# 🎓 Learning Outcomes
 
-Through this project, I learned:
+Through this project, the following skills were developed:
 
-* Natural Language Processing
-* Text Preprocessing
-* Tokenization
-* Deep Learning
-* RNN
-* LSTM
-* GRU
-* TensorFlow
-* Model Deployment
-* Streamlit
+- 🧠 Natural Language Processing (NLP)
+- 🤖 Deep Learning
+- 🔤 Text Tokenization
+- 📝 Text Preprocessing
+- 📊 Text Classification
+- 🔄 RNN Architecture
+- 🧠 LSTM Networks
+- ⚡ GRU Networks
+- 💾 Model Serialization
+- 🌐 Streamlit Deployment
+
+---
 
 ---
 
