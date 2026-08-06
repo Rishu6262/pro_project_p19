@@ -69,16 +69,30 @@ The project uses a **Spam Email Dataset** containing labeled email messages used
 
 ---
 
+## 📋 Dataset Features
+
+| Feature | Description |
+|---------|-------------|
+| 📧 email_text | Complete email content |
+| 🏷 label | Spam or Ham (Target Variable) |
+
+---
+
 # 🛠 Technologies Used
 
-* Python
-* NumPy
-* Pandas
-* TensorFlow
-* Keras
-* NLP
-* Streamlit
-* Pickle
+| Category | Technology | Purpose |
+|----------|------------|---------|
+| 🐍 Programming Language | Python | Core development |
+| 📊 Data Processing | Pandas | Data manipulation |
+| 🔢 Numerical Computing | NumPy | Numerical operations |
+| 🤖 Deep Learning | TensorFlow | Neural network training |
+| 🧠 Deep Learning API | Keras | Model building |
+| 📚 NLP | Tokenization & Text Processing | Email preprocessing |
+| 💾 Model Serialization | Pickle | Save tokenizer and model |
+| 🌐 Web Application | Streamlit | Interactive UI |
+| 🔗 Version Control | Git & GitHub | Source code management |
+
+---
 
 ---
 
