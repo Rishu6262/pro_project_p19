@@ -48,43 +48,20 @@ The primary objective of this project is to develop an intelligent **Deep Learni
 - 🚀 Build a deployment-ready AI-powered email filtering solution.
 ---
 
-❓ Why I Chose This Project?
+# 📂 Dataset Information
 
-I chose this project because email spam detection is a real-world problem that affects individuals and organizations every day. Spam emails can waste time, reduce productivity, and sometimes contain malicious content such as phishing links and scams.
+The project uses a **Spam Email Dataset** containing labeled email messages used for binary text classification.
 
-This project provided an opportunity to apply Natural Language Processing (NLP) and Deep Learning techniques to solve a practical problem. It allowed me to work with text data, perform preprocessing and tokenization, and build advanced models such as RNN, LSTM, and GRU for email classification.
+## 📊 Dataset Summary
 
-Through this project, I gained hands-on experience in data preprocessing, deep learning model development, performance evaluation, and deployment. It also helped me strengthen my understanding of how Artificial Intelligence can be used to automate tasks and improve communication systems.
-
----
-
-# 🚀 Objectives
-
-* Detect spam emails automatically.
-* Apply Natural Language Processing techniques.
-* Train Deep Learning models for text classification.
-* Compare model performance.
-* Build a reusable email filtering system.
-
----
-
-# 📊 Dataset Information
-
-### Dataset Name
-
-Spam Mail Classifier Dataset
-
-### Total Records
-
-* 1000 Emails
-
-### Features
-
-| Feature    | Description   |
-| ---------- | ------------- |
-| email_text | Email Content |
-| label      | Spam or Ham   |
-
+| Attribute | Details |
+|-----------|---------|
+| 📂 Dataset Name | Spam Mail Classifier Dataset |
+| 📄 Total Records | **1000 Emails** |
+| 📋 Total Features | **2** |
+| 🎯 Target Variable | **Spam / Ham** |
+| 📚 Dataset Type | Text Classification Dataset |
+| 📧 Domain | Email Security & NLP |
 ### Target Variable
 
 * Spam
