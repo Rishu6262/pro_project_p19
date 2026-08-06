@@ -319,13 +319,18 @@ Through this project, the following skills were developed:
 
 ---
 
-# 🔮 Future Improvements
+# 🚀 Future Improvements
 
-* BERT-based Spam Detection
-* Multi-language Support
-* Real-time Email Filtering
-* Gmail Integration
-* Advanced NLP Models
+Future enhancements include:
+
+- 🤖 BERT-based Spam Detection
+- 🧠 Transformer Models
+- 🌍 Multi-language Email Support
+- 📧 Gmail API Integration
+- ⚡ Real-Time Email Filtering
+- ☁ Cloud Deployment
+- 📊 Spam Analytics Dashboard
+- 📱 Mobile Application Support
 
 ---
 
