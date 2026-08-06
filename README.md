@@ -31,22 +31,21 @@ The **Spam Email Classifier Using Deep Learning** addresses this challenge by le
 
 ---
 
-# ❓ Why Use This Project?
+# 🎯 Project Objectives
 
-Email spam is one of the most common problems in digital communication. Manually filtering unwanted emails is time-consuming and inefficient. This project uses Deep Learning and Natural Language Processing (NLP) techniques to automatically classify emails as Spam or Ham (Not Spam).
+The primary objective of this project is to develop an intelligent **Deep Learning-based Email Classification System** capable of accurately identifying spam emails using Natural Language Processing techniques.
 
-### Benefits of This Project
+### ⭐ Key Objectives
 
-* Automates email filtering process.
-* Reduces unwanted spam messages.
-* Improves email management efficiency.
-* Demonstrates real-world NLP applications.
-* Helps organizations and individuals detect suspicious emails.
-* Provides hands-on experience with Deep Learning models such as RNN, LSTM, and GRU.
-* Can be extended for enterprise-level email security systems.
-
-This project serves as a practical example of how Artificial Intelligence can be used to solve real-world communication and cybersecurity challenges.
-
+- 📧 Automatically classify emails as Spam or Ham.
+- 🧹 Perform text cleaning and preprocessing.
+- 🔤 Apply tokenization and sequence generation.
+- 🧠 Train Deep Learning models for text classification.
+- 📊 Compare RNN, LSTM, and GRU models.
+- 📏 Evaluate model performance using standard classification metrics.
+- 💾 Save the best-performing model for deployment.
+- 🌐 Develop an interactive Streamlit application.
+- 🚀 Build a deployment-ready AI-powered email filtering solution.
 ---
 
 ❓ Why I Chose This Project?
